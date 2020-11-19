@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: 
+Disallow: /manage/
+Disallow: /supplements/
+
+Sitemap: https://example.com/sitemap.xml

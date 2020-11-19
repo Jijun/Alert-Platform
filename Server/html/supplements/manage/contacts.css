@@ -1,0 +1,212 @@
+/*
+ * @author: Mike
+ * Copyright 2019 Mike. All rights reserved.
+ * This file is licensed under the MIT License.
+ */
+
+@import url("https://picloud.xyz/Fonts/?Ubuntu%20Mono,400");
+
+@charset "UTF-8";
+
+/* Modal Input/Simplified Select2 */
+input {
+	outline: none;
+	border: none;
+}
+input:focus {
+	border-color: transparent !important;
+}
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+input::-webkit-input-placeholder { color: #adadad;}
+input:-moz-placeholder { color: #adadad;}
+input::-moz-placeholder { color: #adadad;}
+input:-ms-input-placeholder { color: #adadad;}
+
+.container-contact100 {
+	box-sizing: border-box;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrap-contact100 {
+	width: 100%;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 42px 55px 45px 55px;
+}
+
+.contact100-form {
+	width: 100%;
+}
+
+.wrap-input100 {
+	width: 100%;
+	position: relative;
+	border-bottom: 2px solid #d9d9d9;
+	padding-bottom: 12px;
+	margin-bottom: 18px;
+}
+
+.label-input100 {
+	font-family: Poppins;
+	font-size: 13px;
+	color: #666666;
+	line-height: 1.5;
+	padding-left: 5px;
+}
+
+.input100 {
+	display: block;
+	width: 100%;
+	background: transparent;
+	font-family: Poppins;
+	font-size: 18px;
+	color: #333333;
+	line-height: 1.2;
+	padding: 0 5px;
+}
+
+.focus-input100::before {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+	background: #7f7f7f;
+}
+
+input.input100 {
+	height: 40px;
+}
+@media screen and (max-width: 320px) {
+	input.input100 {
+		height: 28px;
+	}
+}
+
+.input100:focus + .focus-input100::before {
+	width: 100%;
+}
+
+.has-val.input100 + .focus-input100::before {
+	width: 100%;
+}
+
+@media (max-width: 576px) {
+	.wrap-contact100 {
+		padding: 10px 5px;
+	}
+}
+
+/* Input */
+.cell .input-field {
+	position: relative;
+	height: 32px;
+	line-height: 32px;
+	margin: 0 auto;
+}
+.cell .input-field {
+	position: relative;
+	height: 32px;
+	line-height: 32px;
+	margin: 0 auto;
+}
+.cell label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #d3d3d3;
+	transition: 0.2s all;
+	cursor: text;
+}
+.cell input {
+	width: 96%;
+	border: 0;
+	outline: 0;
+	padding: 0.5rem 8px;
+	border-radius: 7px;
+	border-bottom: 2px solid #d3d3d3;
+	box-shadow: none;
+	color: #111;
+}
+.cell input:invalid {
+	outline: 0;
+}
+.cell input:focus, .cell input:valid {
+	border-color: #00dd22;
+}
+.cell input:focus ~ label, .cell input:valid ~ label {
+	font-size: 14px;
+	top: -24px;
+	color: #563d0b;
+}
+/* New Submit Button */
+.cell .button1 {
+	 width: 80px;
+	 height: 36px;
+	 font-size: 1em;
+	 line-height: 2em;
+	 border-radius:5px;
+}
+.cell .button1.NEW1 {
+	 color: #efefef;
+	 background: rgba(102,102,102,0.8);
+	 border: 1px solid rgba(102,102,102,0.8);
+	 cursor: not-allowed;
+}
+.cell .button1.NEW1 i {
+	 pointer-events: none;
+}
+.cell .button1.NEW2 {
+	 background: rgba(16, 234, 69, 0.72);
+	 border: 1px solid rgba(16, 234, 69, 0.72);
+	 transition: all 0.3s;
+	 color: #016666;
+	 cursor: pointer;
+}
+.cell .button1.NEW2:hover {
+	 background: #f4e242;
+	 color: #09874e;
+	 font-weight: bold;
+	 border: 1px solid #f4e242;
+}
+/* Table Settings */
+.cell.fonts {
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 14px;
+	word-wrap: break-word;
+}
+.row .cell:nth-child(1) {
+	width: 132px;
+	padding-left: 12px;
+}
+.row .cell:nth-child(2) {
+	width: 166px;
+	padding-left: 12px;
+}
+.row .cell:nth-child(3) {
+	width: 530px;
+	padding-left: 12px;
+}
+.row .cell:nth-child(4) {
+	width: 132px;
+	padding-left: 12px;
+}
